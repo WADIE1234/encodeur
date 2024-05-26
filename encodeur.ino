@@ -1,31 +1,7 @@
-#include <QTRSensors.h>
-int led=5;
-int red=49;
-int green=53;
+
 
 int launchpin=7;
-const uint8_t sensorCount=16;
-// uint16_t s[SensorCount];
-int s[16];
-QTRSensorsRC qtr((unsigned char[]){A0, A1, A2, A3, A4, A5, A6,A7,A8, A9, A10, A11, A12, A13, A14,A15}, 16);
 
-int j=10000000000;
-//hetha kl 3eda
-int position;
-int n=0;
-int c=0;
-//PID
-int right_speed,left_speed; 
-float last_time2;
-int x=0;
-float lt;
-
-// float kp=0.026,kd=0.05,ki=0,P,D,I;
-
-// float kp=0.022,kd=0.08,ki=0,P,D,I; 110?150
- float kp=0.025,kd=0.07,ki=0,P,D,I; 
-float PIDvalue,lasterror,error,error1,lasterror1;
-int left_base=180,right_base=130;
 //motors
 int rightF=6;
 int rightR=5;
